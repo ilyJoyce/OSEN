@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal - CommUNIX - Power to the People. Rooted in Freedom.</title>
+    <meta name="description" content="Legal information for CommUNIX - License, privacy policy, and terms of use.">
+    <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&family=Red+Hat+Display:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'comm-red': '#C8102E',
+                        'comm-red-dark': '#A00D26',
+                        'comm-gold': '#FFD700',
+                        'comm-black': '#121212',
+                    },
+                    fontFamily: {
+                        sans: ['Red Hat Display', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/css">
+        @keyframes hammer-animate {
+            0% { transform: rotate(-5deg); }
+            50% { transform: rotate(5deg); }
+            100% { transform: rotate(-5deg); }
+        }
+        
+        .hammer-icon {
+            animation: hammer-animate 3s ease-in-out infinite;
+        }
+        
+        .legal-document {
+            background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .dark .legal-document {
+            background: linear-gradient(135deg, #1a1a1a 0%, #222222 100%);
+        }
+        
+        .nav-scrolled {
+            background-color: rgba(18, 18, 18, 0.95);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .bg-gear-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M54.627 30.5c0 1.38-1.12 2.5-2.5 2.5-1.38 0-2.5-1.12-2.5-2.5 0-1.38 1.12-2.5 2.5-2.5 1.38 0 2.5 1.12 2.5 2.5zm-49.254 0c0 1.38-1.12 2.5-2.5 2.5-1.38 0-2.5-1.12-2.5-2.5 0-1.38 1.12-2.5 2.5-2.5 1.38 0 2.5 1.12 2.5 2.5zm4.876-12.5c0 1.38-1.12 2.5-2.5 2.5-1.38 0-2.5-1.12-2.5-2.5 0-1.38 1.12-2.5 2.5-2.5 1.38 0 2.5 1.12 2.5 2.5zm39.502 0c0 1.38-1.12 2.5-2.5 2.5-1.38 0-2.5-1.12-2.5-2.5 0-1.38 1.12-2.5 2.5-2.5 1.38 0 2.5 1.12 2.5 2.5zM30 5.373c1.38 0 2.5-1.12 2.5-2.5 0-1.38-1.12-2.5-2.5-2.5-1.38 0-2.5 1.12-2.5 2.5 0 1.38 1.12 2.5 2.5 2.5zm0 49.254c1.38 0 2.5-1.12 2.5-2.5 0-1.38-1.12-2.5-2.5-2.5-1.38 0-2.5 1.12-2.5 2.5 0 1.38 1.12 2.5 2.5 2.5zm-12.5-4.876c1.38 0 2.5-1.12 2.5-2.5 0-1.38-1.12-2.5-2.5-2.5-1.38 0-2.5 1.12-2.5 2.5 0 1.38 1.12 2.5 2.5 2.5zm25 0c1.38 0 2.5-1.12 2.5-2.5 0-1.38-1.12-2.5-2.5-2.5-1.38 0-2.5 1.12-2.5 2.5 0 1.38 1.12 2.5 2.5 2.5z' fill='%23c8102e' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-white dark:bg-comm-black text-gray-800 dark:text-gray-200 font-sans transition-colors duration-300">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 bg-comm-red dark:bg-comm-red-dark transition-all duration-300">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <a href="index.html" class="flex items-center">
+                        <img src="/media/hammer-notxt.png" alt="CommUNIX Hammer Logo" class="hammer-icon w-10 h-10 text-white" />
+                        <span class="ml-2 text-white font-heading font-bold text-xl">CommUNIX</span>
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="index.html" class="text-white hover:text-comm-gold transition-colors font-medium">Home</a>
+                    <a href="download.html" class="text-white hover:text-comm-gold transition-colors font-medium">Download</a>
+                    <a href="info.html" class="text-white hover:text-comm-gold transition-colors font-medium">Info</a>
+                    <a href="docs.html" class="text-white hover:text-comm-gold transition-colors font-medium">Docs</a>
+                    <a href="community.html" class="text-white hover:text-comm-gold transition-colors font-medium">Community</a>
+                    <a href="legal.html" class="text-white hover:text-comm-gold transition-colors font-medium">Legal</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <button id="theme-toggle" class="text-white hover:text-comm-gold transition-colors">
+                        <svg id="theme-icon-dark" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                        <svg id="theme-icon-light" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                    </button>
+                    
+                    <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-comm-red-dark">
+            <div class="container mx-auto px-4 py-2">
+                <a href="index.html" class="block py-2 text-white hover:text-comm-gold transition-colors">Home</a>
+                <a href="download.html" class="block py-2 text-white hover:text-comm-gold transition-colors">Download</a>
+                <a href="info.html" class="block py-2 text-white hover:text-comm-gold transition-colors">Info</a>
+                <a href="docs.html" class="block py-2 text-white hover:text-comm-gold transition-colors">Docs</a>
+                <a href="community.html" class="block py-2 text-white hover:text-comm-gold transition-colors">Community</a>
+                <a href="legal.html" class="block py-2 text-white hover:text-comm-gold transition-colors">Legal</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-24 pb-16">
+        <!-- Hero Section -->
+        <section class="bg-gear-pattern py-16 md:py-24 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-b from-comm-red/10 to-transparent dark:from-comm-red/5 dark:to-transparent"></div>
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h1 class="text-4xl md:text-5xl font-heading font-bold mb-6 text-comm-black dark:text-white">
+                        Legal Information
+                    </h1>
+                    <p class="text-xl mb-8 text-gray-700 dark:text-gray-300">
+                        Transparency and freedom are at the core of everything we do.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Legal Section -->
+        <section class="py-16 bg-white dark:bg-gray-800">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <div class="flex flex-col md:flex-row gap-8 mb-12">
+                        <div class="md:w-1/3">
+                            <div class="sticky top-24">
+                                <h2 class="text-2xl font-heading font-bold mb-6">Legal Documents</h2>
+                                <ul class="space-y-3">
+                                    <li><a href="#license" class="block py-2 px-4 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors font-medium">CUDL License</a></li>
+                                    <li><a href="#privacy" class="block py-2 px-4 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors font-medium">Privacy Policy</a></li>
+                                    <li><a href="#conduct" class="block py-2 px-4 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors font-medium">Code of Conduct</a></li>
+                                    <li><a href="#trademarks" class="block py-2 px-4 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors font-medium">Trademarks</a></li>
+                                    <li><a href="#disclaimer" class="block py-2 px-4 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors font-medium">Disclaimer</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="md:w-2/3">
+                            <!-- License -->
+                            <section id="license" class="mb-12">
+                                <h2 class="text-3xl font-heading font-bold mb-6">CUDL</h2>
+                                <div class="legal-document p-6 md:p-8 rounded-lg mb-6">
+                                    <div class="prose dark:prose-invert max-w-none">
+                                        <h3 class="text-2xl font-heading font-bold mb-4 text-center">CommUNIX Universal Development License</h3>
+                                        <p class="text-center mb-6">Version 1.0 - July 2025<br>(C) 2025 The CommUNIX Collective</p>
+                                        
+                                        <h4 class="font-heading font-bold text-xl mb-3">Preamble</h4>
+                                        <p class="mb-4">
+                                            The CommUNIX Universal Development License (CUDL) exists to uphold the principles of collective ownership, technological equality, and the liberation of knowledge. Inspired by the ideals of community, cooperation, and transparency, this license ensures that all software bearing this license remains a shared effort and remains free in perpetuity.
+                                        </p>
+                                        <p class="mb-6">
+                                            Software is not a commodity. It is a collective tool. This license guarantees that your contributions to the digital commons remain part of it, forever accessible to all.
+                                        </p>
+                                        
+                                        <h4 class="font-heading font-bold text-xl mb-3">Terms and Conditions</h4>
+                                        
+                                        <h5 class="font-heading font-bold mt-4 mb-2">1. Definitions</h5>
+                                        <ul class="list-disc pl-5 space-y-1 mb-4">
+                                            <li>"Work" refers to any software, code, documentation, or media distributed under this License.</li>
+                                            <li>"You" means any person or entity using, modifying, or distributing the Work.</li>
+                                            <li>"Modified Work" means any derivative or altered version of the Work.</li>
+                                        </ul>
+                                        
+                                        <h5 class="font-heading font-bold mt-4 mb-2">2. License Grant</h5>
+                                        <p class="mb-2">
+                                            You are free to:
+                                        </p>
+                                        <ul class="list-disc pl-5 space-y-1 mb-4">
+                                            <li>Use the Work for any purpose, personal, educational, or commercial.</li>
+                                            <li>Study and analyze the Work.</li>
+                                            <li>Modify the Work to suit your needs.</li>
+                                            <li>Share the Work with others, in original or modified form.</li>
+                                        </ul>
+                                        
+                                        <h5 class="font-heading font-bold mt-4 mb-2">3. Conditions of Redistribution</h5>
+                                        <ul class="list-disc pl-5 space-y-1 mb-4">
+                                            <li>Any distribution of the Work, whether modified or unmodified, must be licensed under this same license (CUDL).</li>
+                                            <li>The source code must be made available alongside the distributed Work.</li>
+                                            <li>A notice of authorship must be preserved, giving credit to original contributors.</li>
+                                            <li>You must include a copy of this license with any distributed version of the Work.</li>
+                                        </ul>
+                                        
+                                        <h5 class="font-heading font-bold mt-4 mb-2">4. No Discrimination</h5>
+                                        <ul class="list-disc pl-5 space-y-1 mb-4">
+                                            <li>This License may not be used to impose restrictions on users based on nationality, identity, or ideology.</li>
+                                            <li>All individuals and collectives have equal rights to the Work.</li>
+                                        </ul>
+                                        
+                                        <h5 class="font-heading font-bold mt-4 mb-2">5. No Warranty</h5>
+                                        <p class="mb-4">
+                                            This Work is provided "as is," without warranty of any kind, express or implied. The collective disclaims liability for any damages resulting from the use or misuse of this Work.
+                                        </p>
+                                        
+                                        <h5 class="font-heading font-bold mt-4 mb-2">6. Compatibility</h5>
+                                        <p class="mb-4">
+                                            This license is not compatible with non-copyleft licenses. Works originally licensed under CUDL may not be relicensed under MIT, BSD, Apache, or proprietary licenses.
+                                        </p>
+                                        
+                                        <h5 class="font-heading font-bold mt-4 mb-2">Final Clause</h5>
+                                        <p class="mb-2">
+                                            Any violation of this License automatically terminates your rights to use or distribute the Work.
+                                        </p>
+                                        <p class="mb-2">
+                                            By modifying, distributing, or using the Work, you acknowledge and accept the terms of this license.
+                                        </p>
+                                        <p class="text-center mt-6 font-medium">
+                                            Long Live the Collective.<br>
+                                            For software that belongs to everyone — not just the few.
+                                        </p>
+                                        <p class="text-center mt-4">
+                                            ✊ Powered by CommUNIX<br>
+                                            License Version 1.0 — July 2025
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <p class="mb-4 text-gray-600 dark:text-gray-400">
+                                        Full License downloads:
+                                    </p>
+                                    <a href="/license/cudl.pdf" class="inline-block border border-comm-red text-comm-red dark:text-white hover:bg-comm-red hover:text-white font-bold py-3 px-6 rounded transition-colors">
+                                        PDF
+                                    </a>
+                                    <a href="/license/cudl.md" class="inline-block border border-comm-red text-comm-red dark:text-white hover:bg-comm-red hover:text-white font-bold py-3 px-6 rounded transition-colors ml-4">
+                                        Markdown
+                                    </a>
+                                    <a href="/license/cudl.txt" class="inline-block border border-comm-red text-comm-red dark:text-white hover:bg-comm-red hover:text-white font-bold py-3 px-6 rounded transition-colors ml-4">
+                                        Plain Text
+                                    </a>
+                                    <p class="mt-4 text-sm text-gray-500 dark:text-gray-400">
+                                        Just want to redistribute software?<br>
+                                        You can use the redistribution version for easy inclusion in your projects.
+                                    </p>
+                                    <a href="/license/redist-cudl.txt" class="inline-block border border-comm-red text-comm-red dark:text-white hover:bg-comm-red hover:text-white font-bold py-3 px-6 rounded transition-colors mt-2">
+                                        Redistribution Version (Plain Text)
+                                    </a>
+                                </div>
+                            </section>
+                            
+                            <!-- Privacy Policy -->
+                            <section id="privacy" class="mb-12">
+                                <h2 class="text-3xl font-heading font-bold mb-6">Privacy Policy</h2>
+                                <div class="legal-document p-6 md:p-8 rounded-lg">
+                                    <div class="prose dark:prose-invert max-w-none">
+                                        <h3 class="text-2xl font-heading font-bold mb-4">Our Commitment to Privacy</h3>
+                                        <p class="mb-4">
+                                            The CommUNIX Collective believes privacy is a fundamental right. This policy explains what information we collect and how we use it.
+                                        </p>
+                                        
+                                        <h4 class="font-heading font-bold text-xl mb-3">1. Information We Collect</h4>
+                                        <p class="mb-4">
+                                            <strong>Website Usage:</strong> We collect anonymous analytics data to improve our website. This includes:
+                                        </p>
+                                        <ul class="list-disc pl-5 space-y-1 mb-4">
+                                            <li>Pages visited</li>
+                                            <li>Referring sites</li>
+                                            <li>Browser and device information</li>
+                                        </ul>
+                                        <p class="mb-4">
+                                            <strong>Downloads:</strong> We do not track or record individual downloads of CommUNIX ISOs.
+                                        </p>
+                                        
+                                        <h4 class="font-heading font-bold text-xl mb-3">2. Information We Don't Collect</h4>
+                                        <p class="mb-4">
+                                            We deliberately avoid collecting:
+                                        </p>
+                                        <ul class="list-disc pl-5 space-y-1 mb-4">
+                                            <li>IP addresses (they are anonymized before processing)</li>
+                                            <li>Personal identifiers</li>
+                                            <li>Location data beyond country-level</li>
+                                        </ul>
+                                        
+                                        <h4 class="font-heading font-bold text-xl mb-3">3. Third-Party Services</h4>
+                                        <p class="mb-4">
+                                            We use minimal third-party services:
+                                        </p>
+                                        <ul class="list-disc pl-5 space-y-1 mb-4">
+                                            <li>Matomo Analytics (self-hosted, data never leaves our servers)</li>
+                                            <li>Forums and Git hosting (self-hosted whenever possible)</li>
+                                        </ul>
+                                        
+                                        <h4 class="font-heading font-bold text-xl mb-3">4. Your Rights</h4>
+                                        <p class="mb-4">
+                                            You have the right to:
+                                        </p>
+                                        <ul class="list-disc pl-5 space-y-1 mb-4">
+                                            <li>Access any data we hold about you</li>
+                                            <li>Request deletion of your data</li>
+                                            <li>Opt-out of analytics tracking</li>
+                                        </ul>
+                                        
+                                        <h4 class="font-heading font-bold text-xl mb-3">5. Changes to This Policy</h4>
+                                        <p>
+                                            Any changes to this policy will be voted on by the community and announced prominently on our website.
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            
+                            <!-- Code of Conduct -->
+                            <section id="conduct" class="mb-12">
+                                <h2 class="text-3xl font-heading font-bold mb-6">Code of Conduct</h2>
+                                <div class="legal-document p-6 md:p-8 rounded-lg">
+                                    <div class="prose dark:prose-invert max-w-none">
+                                        <h3 class="text-2xl font-heading font-bold mb-4">Our Community Standards</h3>
+                                        <p class="mb-4">
+                                            The CommUNIX community is committed to creating a welcoming environment for all, regardless of background or identity. All participants must abide by this Code of Conduct.
+                                        </p>
+                                        
+                                        <h4 class="font-heading font-bold text-xl mb-3">Expected Behavior</h4>
+                                        <p class="mb-2">
+                                            All community members should:
+                                        </p>
+                                        <ul class="list-disc pl-5 space-y-1 mb-4">
+                                            <li>Be respectful and inclusive</li>
+                                            <li>Collaborate openly</li>
+                                            <li>Give and accept constructive feedback gracefully</li>
+                                            <li>Show empathy toward others</li>
+                                        </ul>
+                                        
+                                        <h4 class="font-heading font-bold text-xl mb-3">Unacceptable Behavior</h4>
+                                        <p class="mb-2">
+                                            The following behaviors are unacceptable:
+                                        </p>
+                                        <ul class="list-disc pl-5 space-y-1 mb-4">
+                                            <li>Harassment or discrimination of any kind</li>
+                                            <li>Trolling or personal attacks</li>
+                                            <li>Promotion of proprietary software in our spaces</li>
+                                            <li>Disrespecting community decisions made through democratic processes</li>
+                                        </ul>
+                                        
+                                        <h4 class="font-heading font-bold text-xl mb-3">Enforcement</h4>
+                                        <p class="mb-4">
+                                            Violations will be addressed by the elected Conduct Committee through a transparent process. Consequences may include:
+                                        </p>
+                                        <ul class="list-disc pl-5 space-y-1 mb-4">
+                                            <li>Warning</li>
+                                            <li>Temporary suspension from community spaces</li>
+                                            <li>Permanent ban in severe cases</li>
+                                        </ul>
+                                        
+                                        <h4 class="font-heading font-bold text-xl mb-3">Reporting</h4>
+                                        <p>
+                                            To report violations, email conduct@communix.org. All reports are confidential.
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            
+                            <!-- Trademarks -->
+                            <section id="trademarks" class="mb-12">
+                                <h2 class="text-3xl font-heading font-bold mb-6">Trademarks</h2>
+                                <div class="legal-document p-6 md:p-8 rounded-lg">
+                                    <div class="prose dark:prose-invert max-w-none">
+                                        <h3 class="text-2xl font-heading font-bold mb-4">CommUNIX Trademark Policy</h3>
+                                        <p class="mb-4">
+                                            The CommUNIX name and logo are collective trademarks owned by the CommUNIX Collective. They represent our community and values.
+                                        </p>
+                                        
+                                        <h4 class="font-heading font-bold text-xl mb-3">Permitted Use</h4>
+                                        <p class="mb-2">
+                                            You may use the CommUNIX trademarks to:
+                                        </p>
+                                        <ul class="list-disc pl-5 space-y-1 mb-4">
+                                            <li>Refer to the CommUNIX project truthfully</li>
+                                            <li>Describe modified versions, as long as it's clear they are not official releases</li>
+                                            <li>Link to our website or resources</li>
+                                        </ul>
+                                        
+                                        <h4 class="font-heading font-bold text-xl mb-3">Restricted Use</h4>
+                                        <p class="mb-2">
+                                            You may not use the trademarks to:
+                                        </p>
+                                        <ul class="list-disc pl-5 space-y-1 mb-4">
+                                            <li>Imply endorsement by the collective without permission</li>
+                                            <li>Promote proprietary software or services</li>
+                                            <li>Misrepresent your relationship with the project</li>
+                                        </ul>
+                                        
+                                        <h4 class="font-heading font-bold text-xl mb-3">Modified Versions</h4>
+                                        <p>
+                                            If you distribute a modified version of CommUNIX, you must clearly state that it is modified and not an official release. You may not use the official logo for modified versions.
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            
+                            <!-- Disclaimer -->
+                            <section id="disclaimer">
+                                <h2 class="text-3xl font-heading font-bold mb-6">Disclaimer</h2>
+                                <div class="legal-document p-6 md:p-8 rounded-lg">
+                                    <div class="prose dark:prose-invert max-w-none">
+                                        <h3 class="text-2xl font-heading font-bold mb-4">No Warranty</h3>
+                                        <p class="mb-4">
+                                            CommUNIX is provided "as is" without warranty of any kind, either expressed or implied, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose.
+                                        </p>
+                                        
+                                        <h4 class="font-heading font-bold text-xl mb-3">Limitation of Liability</h4>
+                                        <p class="mb-4">
+                                            In no event shall the CommUNIX Collective be liable for any damages, including lost profits, lost data, or any other incidental or consequential damages arising out of the use or inability to use the software, even if the CommUNIX Collective has been advised of the possibility of such damages.
+                                        </p>
+                                        
+                                        <h4 class="font-heading font-bold text-xl mb-3">Security</h4>
+                                        <p>
+                                            While we strive to create secure software, we make no guarantees about the security of CommUNIX. Users are responsible for their own security practices.
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-comm-black text-gray-400 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-white font-heading font-bold mb-4">CommUNIX</h3>
+                    <p class="mb-4">
+                        A Linux distribution built around the ideals of socialism, open collaboration, and community-first computing.
+                    </p>
+                    <p>
+                        © 2025 CommUNIX Collective
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-white font-heading font-bold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="legal.html" class="hover:text-white transition-colors">License (CUDL)</a></li>
+                        <li><a href="legal.html#privacy" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="legal.html#conduct" class="hover:text-white transition-colors">Code of Conduct</a></li>
+                        <li><a href="legal.html#trademarks" class="hover:text-white transition-colors">Trademarks</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-white font-heading font-bold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="docs.html" class="hover:text-white transition-colors">Documentation</a></li>
+                        <li><a href="download.html" class="hover:text-white transition-colors">Source Code</a></li>
+                        <li><a href="https://git.communix.org/issues" class="hover:text-white transition-colors">Bug Tracker</a></li>
+                        <li><a href="community.html#donate" class="hover:text-white transition-colors">Donate</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-white font-heading font-bold mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li><a href="community.html" class="hover:text-white transition-colors">Community Forums</a></li>
+                        <li><a href="mailto:security@communix.org" class="hover:text-white transition-colors">Security Issues</a></li>
+                        <li><a href="mailto:press@communix.org" class="hover:text-white transition-colors">Press Inquiries</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-sm text-center">
+                <p>
+                    CommUNIX is licensed under the CommUNIX Universal Development License (CUDL), which guarantees freedom to use, study, modify, and redistribute without restriction.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Theme toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIconDark = document.getElementById('theme-icon-dark');
+        const themeIconLight = document.getElementById('theme-icon-light');
+        
+        themeToggle.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            localStorage.setItem('color-theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+            themeIconDark.classList.toggle('hidden');
+            themeIconLight.classList.toggle('hidden');
+        });
+        
+        // Check for saved theme preference
+        if (localStorage.getItem('color-theme') === 'light' || (!localStorage.getItem('color-theme') && window.matchMedia('(prefers-color-scheme: light)').matches)) {
+            document.documentElement.classList.remove('dark');
+            themeIconDark.classList.add('hidden');
+            themeIconLight.classList.remove('hidden');
+        } else {
+            document.documentElement.classList.add('dark');
+            themeIconDark.classList.remove('hidden');
+            themeIconLight.classList.add('hidden');
+        }
+        
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        let lastScrollTop = 0;
+        
+        window.addEventListener('scroll', () => {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > 100) {
+                if (scrollTop > lastScrollTop) {
+                    // Scrolling down
+                    navbar.classList.add('nav-scrolled');
+                } else {
+                    // Scrolling up
+                    navbar.classList.add('nav-scrolled');
+                }
+            } else {
+                navbar.classList.remove('nav-scrolled');
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+    </script>
+</body>
+</html>
