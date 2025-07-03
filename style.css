@@ -155,7 +155,6 @@ footer {
         right: 0;
         background: var(--osen-red);
         flex-direction: column;
-        gap: 0;
         display: none;
         margin: 0;
         padding: 1.5rem 0;
@@ -164,6 +163,7 @@ footer {
     }
     nav ul.open {
         display: flex;
+        gap: 1.2rem; /* Only this controls spacing between buttons */
     }
     nav ul li {
         text-align: center;
@@ -172,8 +172,8 @@ footer {
     }
     nav ul li a {
         display: block;
-        margin: 0.7rem 1.5rem;
-        padding: 1.2rem 0;
+        margin: 0; /* Remove margin here */
+        padding: 1.2rem 1.5rem;
         background: var(--osen-accent);
         color: var(--osen-red);
         border-radius: 2rem;
